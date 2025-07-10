@@ -71,7 +71,7 @@
 }
 
 .header-fixed {
-  position: sticky;
+  position: fixed;
   background: #000;
   color: #fff;
   height: 70px;
