@@ -1,0 +1,294 @@
+.header {
+  border-bottom: 1px solid orange;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  -webkit-transition: height 1s ease;
+  transition: height 1s ease;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 95px;
+}
+.header .container {
+  height: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-column-gap: 3.125rem;
+     -moz-column-gap: 3.125rem;
+          column-gap: 3.125rem;
+  position: relative;
+}
+@media (max-width: 1200px) {
+  .header .container {
+    -webkit-column-gap: 1.125rem;
+       -moz-column-gap: 1.125rem;
+            column-gap: 1.125rem;
+  }
+}
+
+.header-right {
+  margin-left: 50px;
+  border-left: 1px solid orange;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  padding-left: 30px;
+  -webkit-box-flex: 0.3;
+      -ms-flex-positive: 0.3;
+          flex-grow: 0.3;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header-panel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 1.875rem;
+     -moz-column-gap: 1.875rem;
+          column-gap: 1.875rem;
+}
+
+.header-panel__icon {
+  font-size: 16px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.current_language {
+  color: #fff;
+}
+
+.header-fixed {
+  position: sticky;
+  background: #000;
+  color: #fff;
+  height: 70px;
+}
+.header-fixed .logo {
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+}
+.header-fixed .nav {
+  top: 35%;
+}
+.header-fixed .nav.active .nav__arrow {
+  bottom: -30px;
+}
+.header-fixed .nav__arrow {
+  bottom: -30px;
+}
+@media (min-width: 1200px) {
+  .header-fixed .nav__sub-list {
+    padding-top: 25px;
+  }
+}
+
+.header__container {
+  margin-top: 0px !important;
+}
+
+.logo {
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.slide {
+  height: 100%;
+  position: relative;
+  z-index: 9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.slide::before {
+  background: #3c4147;
+  content: "";
+  height: 100%;
+  left: 0;
+  opacity: 0.7;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+.slide__title {
+  margin-bottom: 0.5em;
+  color: #ffffff;
+}
+
+.slide__desc {
+  margin-bottom: 2em;
+  color: #ffffff;
+}
+
+.slider-bg-one {
+  background: url("../../images/hero_slider/1.webp") no-repeat scroll center center/cover;
+}
+
+.home-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  row-gap: 30px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media (max-width: 576px) {
+  .home-button {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+.home-button a {
+  border: 2px solid;
+  border-radius: 3px;
+  color: #fff;
+  letter-spacing: 2px;
+  padding: 12px 30px;
+  display: inline-block;
+  text-transform: uppercase;
+}
+.home-button a:hover {
+  background: #f39c12 none repeat scroll 0 0;
+  border-color: #f39c12;
+  color: #ffffff;
+}
+.home-button a:last-child {
+  margin-left: 20px;
+}
+@media (max-width: 576px) {
+  .home-button a:last-child {
+    margin-left: 0px;
+  }
+}
+
+.slider-bg-two {
+  background: url("../../images/hero_slider/2.webp") no-repeat scroll center center/cover;
+}
+
+.slider-bg-three {
+  background: url("../../images/hero_slider/3.webp") no-repeat scroll center center/cover;
+}
+
+.welcome-slider-area {
+  height: 100vh;
+}
+
+.owl-stage,
+.owl-stage-outer,
+.owl-carousel,
+.owl-item {
+  height: 100%;
+}
+
+/* .owl-item.fadeOut,
+.fadeIn {
+    animation-duration: 0.5s;
+    animation-delay: 0;
+} */
+/* .owl-carousel.animate {
+    .fadeIn,
+    .fadeOut {
+        --animate-duration: 0.5s;
+        --animate-delay: 0
+    }
+}
+ */
+#carousel_hero .owl-nav {
+  bottom: 7%;
+  position: absolute;
+  right: 8.4%;
+  color: #000;
+}
+#carousel_hero .owl-nav button {
+  background: #fff none repeat scroll 0 0 !important;
+  display: inline-block;
+  font-size: 30px !important;
+  height: 40px;
+  margin: 0 5px;
+  padding-top: 5px !important;
+  text-align: center;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  width: 40px;
+}
+#carousel_hero .owl-nav button:hover, #carousel_hero .owl-nav button:active {
+  background: orange !important;
+  color: #fff !important;
+}
+
+.owl-item.active .slide .slide__title {
+  -webkit-animation: 1s ease 0.5s normal both 1 running fadeInUp;
+          animation: 1s ease 0.5s normal both 1 running fadeInUp;
+}
+
+.owl-item.active .slide .slide__desc {
+  -webkit-animation: 1s ease 0.8s normal both 1 running fadeInUp;
+          animation: 1s ease 0.8s normal both 1 running fadeInUp;
+}
+
+.owl-item.active .slide .home-button {
+  -webkit-animation: 1s ease 1s normal both 1 running fadeInUp;
+          animation: 1s ease 1s normal both 1 running fadeInUp;
+}
+
+/* .owl-item {
+    &.fadeIn {
+        .slide__title,
+        .slide__desc,
+        .home-button a {
+            animation: backInUp;
+        }
+
+        .slide__title {
+            animation-duration: 0.8s;
+        }
+
+        .slide__desc {
+            animation-duration: 0.9s;
+        }
+
+        .home-button {
+            a {
+                &:nth-of-type(1) {
+                    animation-duration: 0.9s;
+                }
+
+                &:nth-of-type(2) {
+                    animation-duration: 1s;
+                }
+            }
+        }
+    }
+}
+ */

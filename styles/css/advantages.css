@@ -1,0 +1,31 @@
+@media (min-width: 992px) {
+  .advantages {
+    background: rgba(0, 0, 0, 0) url("../../images/promo2.webp") no-repeat scroll right 5% bottom 50%/40% auto;
+  }
+}
+.advantages .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+}
+.advantages .item__icon {
+  background: #f4f7f9 none repeat scroll 0 0;
+  border-radius: 50%;
+  color: #f39c12;
+  font-size: 24px;
+  width: 60px;
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.advantages__items .row {
+  row-gap: 50px;
+}

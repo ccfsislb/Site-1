@@ -1,0 +1,71 @@
+.why_choose_us .area-title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.why_choose_us .area-title__title {
+  margin: 0 auto;
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+}
+.why_choose_us .area-title__title::after {
+  background: #f39c12;
+}
+.why_choose_us .area-title__title::before {
+  border-color: rgb(167, 166, 166);
+  width: 35%;
+}
+.why_choose_us .content-right {
+  color: rgb(255, 255, 255);
+  background: none 0px 0px repeat scroll rgba(243, 156, 18, 0.9);
+  padding: 30px;
+  position: relative;
+}
+.why_choose_us .content-right__bg {
+  background-image: url("https://preview.colorlib.com/theme/carries/img/service/service-cargo-bg.png.webp");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 200%;
+  height: 100%;
+  z-index: -1;
+}
+@media (max-width: 992px) {
+  .why_choose_us .content-right__bg {
+    left: 0;
+    width: 100%;
+  }
+}
+.why_choose_us .content-right__title {
+  color: #fff;
+  padding-bottom: 10px;
+}
+.why_choose_us .content-right__title::before {
+  border-color: #fff;
+  width: 15%;
+}
+.why_choose_us .content-right__btn {
+  margin-top: 15px;
+}
+.why_choose_us .content-right__btn:hover, .why_choose_us .content-right__btn:focus {
+  background: #fff;
+  color: #f39c12;
+}
+.why_choose_us .content-right__list {
+  margin-top: 40px;
+}
+.why_choose_us .content-right__list .list__item {
+  margin-bottom: 15px;
+}
+.why_choose_us .content-right__list .list__item-arrow {
+  margin-right: 15px;
+}
+.why_choose_us .content-left__title {
+  padding-bottom: 10px;
+}
+.why_choose_us .content-left__title::before {
+  border-color: rgba(243, 156, 18, 0.9);
+  width: 15%;
+}

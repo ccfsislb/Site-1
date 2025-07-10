@@ -1,0 +1,29 @@
+.promo {
+  position: relative;
+  background: url("../../images/promo.webp") no-repeat scroll center center/cover;
+  background-attachment: fixed;
+  padding: 100px 0;
+  text-align: center;
+}
+.promo::after {
+  content: "";
+  height: 100%;
+  left: 0px;
+  opacity: 0.9;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  background: none 0px 0px repeat scroll rgb(60, 74, 98);
+  background-size: 100%;
+  opacity: 0.7;
+}
+.promo .container {
+  z-index: 2;
+  position: relative;
+}
+.promo__title {
+  color: #fff;
+}
+.promo__btn {
+  padding: 12px 22px;
+}

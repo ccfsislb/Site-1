@@ -1,0 +1,81 @@
+.attributes-area {
+  position: relative;
+}
+
+.attributes-area__bg {
+  background-image: url("../../images/attributes_image.webp");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: cover;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.attributes {
+  background: #fff;
+  position: relative;
+}
+
+.attribute {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  margin-bottom: 50px;
+}
+.attribute:last-child {
+  margin-bottom: 0;
+}
+.attribute:hover .hexagon svg path {
+  fill: #f39c12;
+}
+@media (max-width: 370px) {
+  .attribute {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    row-gap: 25px;
+  }
+}
+
+.attribute__icon-wrapper {
+  position: relative;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+@media (max-width: 992px) {
+  .attribute__icon-wrapper {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+.hexagon {
+  width: 100px;
+  height: 100px;
+}
+.hexagon svg path {
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.attribute__icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 25px;
+}

@@ -1,0 +1,101 @@
+.testmonial-area:hover #carousel_clientsPhotos .owl-nav .owl-prev, .testmonial-area:hover #carousel_clientsPhotos .owl-nav .owl-next {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+.testmonial-area__title {
+  margin-bottom: 50px;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+}
+.testmonial-area__title::before {
+  width: 35%;
+  background: #f39c12;
+}
+.testmonial-area__title::after {
+  background: #f39c12;
+}
+
+.testmonial {
+  /*    width: 500px;
+      margin: 0 auto;
+  */
+}
+
+.client-photo {
+  border-radius: 50%;
+  overflow: hidden;
+  border: 5px solid transparent;
+  width: 150px;
+  height: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  #carousel_clientsPhotos {
+    width: 500px;
+    margin: 0 auto;
+  }
+}
+#carousel_clientsPhotos .owl-item.center .client-photo {
+  border-color: orange;
+}
+#carousel_clientsPhotos .owl-nav {
+  display: none;
+}
+#carousel_clientsPhotos .owl-nav .owl-prev, #carousel_clientsPhotos .owl-nav .owl-next {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+#carousel_clientsPhotos .owl-nav .owl-prev {
+  left: -25%;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transform: translateX(-20%);
+          transform: translateX(-20%);
+}
+#carousel_clientsPhotos .owl-nav .owl-next {
+  right: -25%;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transform: translateX(20%);
+          transform: translateX(20%);
+}
+
+#carousel_clientsInfo {
+  text-align: center;
+}
+
+.client-info {
+  padding-top: 70px;
+  position: relative;
+}
+.client-info__name {
+  margin-top: 37px;
+  margin-bottom: 10px;
+}
+.client-info__quotes {
+  color: #5d6b82;
+  font-size: 60px;
+  line-height: 1;
+  opacity: 0.5;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
