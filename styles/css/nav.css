@@ -15,13 +15,6 @@
   text-transform: uppercase;
   cursor: pointer;
 }
-.nav__item.active {
-  /*             .nav__link,
-  .nav__item-arrow {
-      color: #f39c12;
-  }
-  */
-}
 .nav__item.active .nav__item-arrow {
   -webkit-transform: rotate(-90deg);
           transform: rotate(-90deg);
@@ -90,9 +83,6 @@
             flex: 1 1 100%;
   }
   .nav__list {
-    /*             opacity: 0;
-    visibility: hidden;
-    transform: translateY(-50%); */
     max-height: 0;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -101,7 +91,6 @@
     width: 100%;
     padding-left: 0;
     padding-top: 1px;
-    overflow: hidden;
     -webkit-transition: max-height 0.5s linear;
     transition: max-height 0.5s linear;
   }
