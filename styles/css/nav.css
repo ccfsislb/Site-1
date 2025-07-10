@@ -17,9 +17,9 @@
 }
 .nav__item.active {
   /*             .nav__link,
-             .nav__item-arrow {
-                 color: #f39c12;
-             }
+  .nav__item-arrow {
+      color: #f39c12;
+  }
   */
 }
 .nav__item.active .nav__item-arrow {
@@ -67,6 +67,14 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+@media (max-width: 768px) {
+  .nav__arrow {
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    bottom: -20px;
+  }
 }
 @media (max-width: 1200px) {
   .nav {

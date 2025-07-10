@@ -87,7 +87,7 @@
   bottom: -30px;
 }
 .header-fixed .nav__arrow {
-  bottom: -30px;
+  bottom: -20px;
 }
 @media (min-width: 1200px) {
   .header-fixed .nav__sub-list {
